@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact | Studio 101 - Mobile &amp; Web App Development in Clarksville, TN</title>
+  <meta name="description" content="Get in touch with Studio 101 to start your mobile app, web app, or PWA project. Based in Clarksville, TN, serving clients everywhere.">
+  <meta name="keywords" content="Studio 101 contact, hire app developer Clarksville TN, start an app project">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Clarity
+  * Template URL: https://bootstrapmade.com/clarity-bootstrap-agency-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="contact-page">
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__fill"></div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below once icon.png has been added to assets/img/ -->
+        <!-- <img src="assets/img/icon.png" alt="Studio 101"> -->
+        <h1 class="sitename">Studio <span class="sitename__accent">101</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="mailto:thelesphore1@gmail.com" data-i18n="nav.emailUs">Email Us</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title glow-section glow-section--light">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> <span data-i18n="breadcrumb.home">Home</span></a></li>
+            <li class="breadcrumb-item active current" data-i18n="nav.contact">Contact</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="title-wrapper">
+        <h1 data-i18n="contact.page.title">Contact Us</h1>
+        <p data-i18n="contact.page.subtitle">Tell us about your idea, and we'll get back to you personally.</p>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section glow-section glow-section--heavy">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-form-card">
+              <div class="form-header">
+                <div class="header-icon">
+                  <i class="bi bi-chat-dots-fill"></i>
+                </div>
+                <h3 data-i18n="contact.form.heading">Let's Start a Conversation</h3>
+                <p data-i18n="contact.form.subtext">Tell us about your app idea, your business, or your property, and we'll get back to you personally.</p>
+              </div>
+
+              <form id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" class="php-email-form">
+                <input type="hidden" name="form-name" value="contact">
+
+                <!-- Honeypot field: hidden from real visitors, bots tend to fill every field they find -->
+                <p class="d-none">
+                  <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" data-i18n-placeholder="contact.form.namePlaceholder" required="">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" data-i18n-placeholder="contact.form.emailPlaceholder" required="">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="subject" placeholder="What's this about?" data-i18n-placeholder="contact.form.subjectPlaceholder" required="">
+                </div>
+
+                <div class="mb-4">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Tell us more about your project..." data-i18n-placeholder="contact.form.messagePlaceholder" required=""></textarea>
+                </div>
+
+                <!-- Netlify auto-renders its reCAPTCHA widget here once deployed and Forms + reCAPTCHA are enabled -->
+                <div data-netlify-recaptcha="true" class="mb-4"></div>
+
+                <button type="submit" class="submit-btn">
+                  <span data-i18n="contact.form.submit">Send Message</span>
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="contact-info-area">
+              <div class="info-header">
+                <h3 data-i18n="contact.info.heading">Let's Build Something Together</h3>
+                <p data-i18n="contact.info.subtext">Prefer email or a quick call? Whatever's easiest for you works for us.</p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="method-card method-card--linked" data-aos="zoom-in" data-aos-delay="250">
+                  <div class="card-icon">
+                    <i class="bi bi-envelope-at"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5 data-i18n="contact.method.emailTitle">Email Us</h5>
+                    <p><a href="mailto:thelesphore1@gmail.com" class="stretched-link">thelesphore1@gmail.com</a></p>
+                    <span class="response-time" data-i18n="contact.method.emailNote">Best for project details</span>
+                  </div>
+                </div>
+
+                <div class="method-card method-card--linked" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-icon">
+                    <i class="bi bi-facebook"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5 data-i18n="contact.method.facebookTitle">Facebook</h5>
+                    <p><a href="https://www.facebook.com/profile.php?id=61591541702055" target="_blank" rel="noopener noreferrer" class="stretched-link">Studio 101</a></p>
+                    <span class="response-time" data-i18n="contact.method.facebookNote">Follow us for updates</span>
+                  </div>
+                </div>
+
+                <div class="method-card method-card--linked" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5 data-i18n="contact.method.phoneTitle">Call Us</h5>
+                    <p><a href="tel:+16464786515" class="stretched-link">+1 (646) 478-6515</a></p>
+                    <span class="response-time" data-i18n="contact.method.phoneNote">Best for a quick chat</span>
+                  </div>
+                </div>
+
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5 data-i18n="contact.method.locationTitle">Location</h5>
+                    <p data-i18n="footer.location">Clarksville, TN, USA</p>
+                    <span class="response-time" data-i18n="contact.method.locationNote">Remote-first, serving clients everywhere</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Studio 101</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p data-i18n="footer.location">Clarksville, TN, USA</p>
+            <p class="mt-3"><strong data-i18n="footer.phoneLabel">Phone:</strong> <span>+1 (646) 478-6515</span></p>
+            <p><strong data-i18n="footer.emailLabel">Email:</strong> <span>thelesphore1@gmail.com</span></p>
+            <p class="mt-1"><a href="https://www.facebook.com/profile.php?id=61591541702055" class="footer-social-link" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i> Facebook</a></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4 data-i18n="footer.ourServices">Our Services</h4>
+          <ul>
+            <li><a href="services.html#mobile-app-development" data-i18n="service.mobile.name">Mobile App Development</a></li>
+            <li><a href="services.html#web-apps-pwas" data-i18n="service.web.name">Web Apps &amp; PWAs</a></li>
+            <li><a href="services.html#mvp-development" data-i18n="service.mvp.name">MVP Development</a></li>
+            <li><a href="services.html#backends-data" data-i18n="service.backend.name">Backends &amp; Data</a></li>
+            <li><a href="services.html#app-store-deployment" data-i18n="service.deploy.name">App Store Deployment</a></li>
+            <li><a href="services.html#maintenance-updates" data-i18n="service.maintenance.name">Maintenance &amp; Updates</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <div class="copyright-row">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-toggle__btn" data-lang="en">EN</button>
+          <button type="button" class="lang-toggle__btn" data-lang="fr">FR</button>
+        </div>
+        <p>© <span>2026</span> <strong class="px-1 sitename">Studio 101</strong> <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Language toggle -->
+  <script src="assets/js/i18n.js"></script>
+
+  <!-- SweetAlert2: the success/error popup after a contact form submission -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Contact form: submits to Netlify Forms via AJAX (Netlify's documented pattern),
+       so the reCAPTCHA + honeypot spam checks run and the page never leaves this view. -->
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      if (!form) return;
+
+      var submitBtn = form.querySelector('.submit-btn');
+      var submitBtnLabel = submitBtn.querySelector('span');
+
+      function cssVar(name) {
+        return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+      }
+
+      function t(key, fallback) {
+        var lang = window.STUDIO101_LANG || 'en';
+        var dict = window.STUDIO101_I18N && window.STUDIO101_I18N.dict;
+        return (dict && dict[lang] && dict[lang][key]) || fallback;
+      }
+
+      function swalTheme() {
+        return {
+          background: cssVar('--surface-color'),
+          color: cssVar('--default-color'),
+          confirmButtonColor: cssVar('--accent-color'),
+          iconColor: cssVar('--accent-color'),
+          customClass: { popup: 'swal-brand-popup', confirmButton: 'swal-brand-btn' }
+        };
+      }
+
+      function encode(data) {
+        return Object.keys(data)
+          .map(function (key) {
+            return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
+          })
+          .join('&');
+      }
+
+      function lockFormAfterSuccess() {
+        form.reset();
+        submitBtn.disabled = true;
+        submitBtnLabel.textContent = t('contact.form.alertSuccessTitle', 'Message Sent!');
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Block submission (and the success alert) until the user has
+        // actually completed the reCAPTCHA challenge. Without this check,
+        // a bare 2xx response from the fetch below was enough to show
+        // "Message Sent!" even when the captcha was never solved.
+        if (window.grecaptcha) {
+          var recaptchaResponse = window.grecaptcha.getResponse();
+          if (!recaptchaResponse) {
+            window.Swal && Swal.fire(Object.assign({
+              icon: 'warning',
+              title: t('contact.form.alertCaptchaTitle', "Please Verify You're Human"),
+              text: t('contact.form.alertCaptchaText', 'Please complete the reCAPTCHA check before sending your message.'),
+              confirmButtonText: t('contact.form.alertCaptchaButton', 'OK')
+            }, swalTheme()));
+            return;
+          }
+        }
+
+        submitBtn.disabled = true;
+
+        var payload = {};
+        new FormData(form).forEach(function (value, key) {
+          payload[key] = value;
+        });
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode(payload)
+        })
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error('Form submission failed (' + response.status + ')');
+            }
+            if (window.grecaptcha) {
+              window.grecaptcha.reset();
+            }
+            lockFormAfterSuccess();
+
+            window.Swal && Swal.fire(Object.assign({
+              icon: 'success',
+              title: t('contact.form.alertSuccessTitle', 'Message Sent!'),
+              text: t('contact.form.alertSuccessText', "Thanks for reaching out. We've received your message and will get back to you personally soon. Please don't submit the form again; it just creates a duplicate."),
+              confirmButtonText: t('contact.form.alertSuccessButton', 'Got it')
+            }, swalTheme()));
+          })
+          .catch(function () {
+            submitBtn.disabled = false;
+
+            window.Swal && Swal.fire(Object.assign({
+              icon: 'error',
+              title: t('contact.form.alertErrorTitle', 'Something Went Wrong'),
+              text: t('contact.form.alertErrorText', "We couldn't send your message. Please try again, or email us directly at thelesphore1@gmail.com."),
+              confirmButtonText: t('contact.form.alertErrorButton', 'OK')
+            }, swalTheme()));
+          });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

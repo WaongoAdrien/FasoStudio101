@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Studio 101 | Mobile &amp; Web App Development in Clarksville, TN</title>
+  <meta name="description" content="Studio 101 is an independent app development studio in Clarksville, TN, building mobile apps, web apps, and PWAs for the African diaspora, small businesses, and community organizations.">
+  <meta name="keywords" content="Studio 101, app development, Clarksville TN, React Native, Expo, mobile app development, African diaspora apps">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="icon">
+  <link href="assets/img/about/logo.png" rel="logo">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Clarity
+  * Template URL: https://bootstrapmade.com/clarity-bootstrap-agency-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__fill"></div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below once icon.png has been added to assets/img/ -->
+        <!-- <img src="assets/img/icon.png" alt="Studio 101"> -->
+        <h1 class="sitename">Studio <span class="sitename__accent">101</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html" data-i18n="nav.getStarted">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section glow-section glow-section--heavy">
+
+      <div class="glow-blob glow-blob--gold glow-blob--md glow-blob--center glow-blob--faint glow-blob--drift-c" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-content">
+              <h1><span id="hero-rotator" class="hero-rotator">Build for <span class="hero-rotator__highlight">Quality</span> &amp; <span class="hero-rotator__highlight">Fun</span></span></h1>
+              <p data-i18n="hero.subtitle">Studio 101 designs, builds, and launches mobile apps, web apps, and PWAs, with a special focus on the African diaspora needs, small businesses, community organizations, and independent landlords. We ship our own products too, so we know the road from idea to App Store firsthand.</p>
+              <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary" data-i18n="hero.ctaPrimary">Start Your Project</a>
+                <a href="services.html" class="btn btn-outline" data-i18n="hero.ctaSecondary">Our Services</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"></span>
+                  <span class="stat-label" data-i18n="hero.stat1Label">Apps Shipped</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1"></span>
+                  <span class="stat-label" data-i18n="hero.stat2Label">Core Services</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-visual">
+              <div class="hero-image">
+                <img src="assets/img/misc/misc-16.webp" alt="Studio 101 app development" class="img-fluid">
+              </div>
+
+              <!-- TODO: swap for a real active-user count once available -->
+              <div class="hero-float-card hero-float-card--top-left" data-aos="fade-down-right" data-aos-delay="400">
+                <div class="hero-float-card__icon"><i class="bi bi-people-fill"></i></div>
+                <div class="hero-float-card__body">
+                  <span class="hero-float-card__value">1,200+</span>
+                  <span class="hero-float-card__label" data-i18n="heroFloat.activeUsers">Active Users</span>
+                </div>
+              </div>
+
+              <!-- TODO: swap for a real revenue-growth figure once available -->
+              <div class="hero-float-card hero-float-card--bottom-right" data-aos="fade-up-left" data-aos-delay="500">
+                <div class="hero-float-card__icon"><i class="bi bi-graph-up-arrow"></i></div>
+                <div class="hero-float-card__body">
+                  <span class="hero-float-card__value">2.4x</span>
+                  <span class="hero-float-card__label" data-i18n="heroFloat.revenueGrowth">Revenue Growth</span>
+                </div>
+              </div>
+
+              <!-- TODO: swap for a real time-saved figure once available -->
+              <div class="hero-float-card hero-float-card--mid-left" data-aos="fade-right" data-aos-delay="600">
+                <div class="hero-float-card__icon"><i class="bi bi-clock-history"></i></div>
+                <div class="hero-float-card__body">
+                  <span class="hero-float-card__value">18 hrs/wk</span>
+                  <span class="hero-float-card__label" data-i18n="heroFloat.timeSaved">Time Saved</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bg-elements">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-particles"></div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section glow-section glow-section--light">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5 align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h6 class="subtitle" data-i18n="home.about.subtitle">Who We Are</h6>
+              <h2 data-i18n="home.about.title">An App Studio Built By the Diaspora, For the Diaspora</h2>
+              <p data-i18n="home.about.text">
+                Studio 101 is an independent app development studio based in Clarksville, Tennessee. We design, build, and launch mobile apps, web apps, and PWAs for founders, small businesses, and community organizations who want software that actually fits how they work.
+              </p>
+
+              <ul class="features-list">
+                <li><i class="bi bi-check-circle-fill"></i><span data-i18n="home.about.feat1">Mobile apps, web apps, and PWAs.  One team, start to finish.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span data-i18n="home.about.feat2">Deep focus on the African diaspora, small businesses, and community organizations.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span data-i18n="home.about.feat3">We ship our own products, so we've walked the path from idea to App Store.</span></li>
+              </ul>
+
+              <a href="about.html" class="btn btn-primary" data-i18n="home.about.cta">Our Story</a>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-composition">
+              <div class="image-main">
+                <img src="assets/img/about/image-banner-app.png" alt="Studio 101 team at work" class="img-fluid" loading="lazy">
+              </div>
+              <div class="image-secondary">
+                <img src="assets/img/about/misc-17.webp" alt="Collaborative planning session" class="img-fluid" loading="lazy">
+              </div>
+              <div class="stats-card">
+                <div class="stats-item">
+                  <h3>2</h3>
+                  <p data-i18n="home.about.stat1">Products Shipped</p>
+                </div>
+                <div class="stats-item">
+                  <h3>6</h3>
+                  <p data-i18n="home.about.stat2">Services Offered</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section glow-section glow-section--medium">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="home.services.title">Services</h2>
+        <p data-i18n="home.services.subtitle">Everything you need to take an app idea from sketch to the App Store and keep it running afterward.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card service-card--gold">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4><a href="services.html#mobile-app-development" data-i18n="service.mobile.name">Mobile App Development</a></h4>
+              <p data-i18n="home.services.mobile.desc">iOS &amp; Android with React Native and Expo! one codebase, both stores.</p>
+              <a href="services.html#mobile-app-development" class="service-link">
+                <span data-i18n="home.services.learnMore">Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card service-card--sky">
+              <div class="service-icon">
+                <i class="bi bi-window"></i>
+              </div>
+              <h4><a href="services.html#web-apps-pwas" data-i18n="service.web.name">Web Apps &amp; PWAs</a></h4>
+              <p data-i18n="home.services.web.desc">Fast, installable web applications: dashboards, portals, booking tools, directories.</p>
+              <a href="services.html#web-apps-pwas" class="service-link">
+                <span data-i18n="home.services.learnMore">Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card service-card--coral">
+              <div class="service-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <h4><a href="services.html#mvp-development" data-i18n="service.mvp.name">MVP Development</a></h4>
+              <p data-i18n="home.services.mvp.desc">Scoping your idea down to a launchable first version, built in weeks.</p>
+              <a href="services.html#mvp-development" class="service-link">
+                <span data-i18n="home.services.learnMore">Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card service-card--violet">
+              <div class="service-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <h4><a href="services.html#backends-data" data-i18n="service.backend.name">Backends &amp; Data</a></h4>
+              <p data-i18n="home.services.backend.desc">Firebase authentication, Firestore databases, storage, and notifications.</p>
+              <a href="services.html#backends-data" class="service-link">
+                <span data-i18n="home.services.learnMore">Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card service-card--emerald">
+              <div class="service-icon">
+                <i class="bi bi-cloud-arrow-up"></i>
+              </div>
+              <h4><a href="services.html#app-store-deployment" data-i18n="service.deploy.name">App Store Deployment</a></h4>
+              <p data-i18n="home.services.deploy.desc">App Store Connect, Google Play, signing, review, and release management.</p>
+              <a href="services.html#app-store-deployment" class="service-link">
+                <span data-i18n="home.services.learnMore">Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card service-card--rose">
+              <div class="service-icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h4><a href="services.html#maintenance-updates" data-i18n="service.maintenance.name">Maintenance &amp; Updates</a></h4>
+              <p data-i18n="home.services.maintenance.desc">Bug fixes, OS updates, new features, and store compliance.</p>
+              <a href="services.html#maintenance-updates" class="service-link">
+                <span data-i18n="home.services.learnMore">Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="services-cta">
+              <h3 data-i18n="home.services.ctaTitle">Ready to Build Something?</h3>
+              <p data-i18n="home.services.ctaText">Let's talk about your idea and figure out the fastest path to launch.</p>
+              <a href="contact.html" class="btn btn-primary" data-i18n="home.services.ctaButton">Get Started Today</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section glow-section glow-section--heavy">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="home.whyus.title">Why Us</h2>
+        <p data-i18n="home.whyus.subtitle">Founder-built, not corporate agency-speak.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-person-workspace"></i>
+              </div>
+              <h4 data-i18n="home.whyus.card1.title">Founder-Built, Not Corporate</h4>
+              <p data-i18n="home.whyus.card1.text">You work directly with the person building your app, with no account managers, no handoffs, and no runaround.</p>
+            </div>
+          </div><!-- End Feature Card -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <h4 data-i18n="home.whyus.card2.title">We've Shipped Our Own Apps</h4>
+              <p data-i18n="home.whyus.card2.text">BurkinaBizz and MyRentApp are our own products, live in the App Store, and we've walked the full journey ourselves.</p>
+            </div>
+          </div><!-- End Feature Card -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-people"></i>
+              </div>
+              <h4 data-i18n="home.whyus.card3.title">Built for Your Community</h4>
+              <p data-i18n="home.whyus.card3.text">A special focus on the African diaspora, small businesses, community organizations, and independent landlords.</p>
+            </div>
+          </div><!-- End Feature Card -->
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="feature-showcase">
+              <img src="assets/img/illustration/illustration-14.webp" alt="Studio 101 build process" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="feature-content">
+              <h3 data-i18n="home.whyus.heading">Why Studio 101</h3>
+              <p class="lead" data-i18n="home.whyus.lead">We keep things plain, honest, and moving, from your first message to your app going live.</p>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5 data-i18n="home.whyus.item1.title">Plain-English Communication</h5>
+                    <p data-i18n="home.whyus.item1.text">No jargon. You always know where your project stands.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5 data-i18n="home.whyus.item2.title">Firebase-Powered Backends</h5>
+                    <p data-i18n="home.whyus.item2.text">Secure auth, real-time data, and storage baked in from day one.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5 data-i18n="home.whyus.item3.title">We Handle the App Store Maze</h5>
+                    <p data-i18n="home.whyus.item3.text">Signing, review, and compliance, all managed for you.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-wrapper">
+                <a href="contact.html" class="btn btn-primary" data-i18n="hero.ctaPrimary">Start Your Project</a>
+                <a href="services.html" class="btn btn-outline" data-i18n="home.whyus.cta2">See Our Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Studio 101</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p data-i18n="footer.location">Clarksville, TN, USA</p>
+            <p class="mt-3"><strong data-i18n="footer.phoneLabel">Phone:</strong> <span>+1 (646) 478-6515</span></p>
+            <p><strong data-i18n="footer.emailLabel">Email:</strong> <span>thelesphore1@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4 data-i18n="footer.ourServices">Our Services</h4>
+          <ul>
+            <li><a href="services.html#mobile-app-development" data-i18n="service.mobile.name">Mobile App Development</a></li>
+            <li><a href="services.html#web-apps-pwas" data-i18n="service.web.name">Web Apps &amp; PWAs</a></li>
+            <li><a href="services.html#mvp-development" data-i18n="service.mvp.name">MVP Development</a></li>
+            <li><a href="services.html#backends-data" data-i18n="service.backend.name">Backends &amp; Data</a></li>
+            <li><a href="services.html#app-store-deployment" data-i18n="service.deploy.name">App Store Deployment</a></li>
+            <li><a href="services.html#maintenance-updates" data-i18n="service.maintenance.name">Maintenance &amp; Updates</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <div class="copyright-row">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-toggle__btn" data-lang="en">EN</button>
+          <button type="button" class="lang-toggle__btn" data-lang="fr">FR</button>
+        </div>
+        <p>© <span>2026</span> <strong class="px-1 sitename">Studio 101</strong> <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Language toggle -->
+  <script src="assets/js/i18n.js"></script>
+
+  <!-- Hero headline rotator: loops between phrases forever, in the current language -->
+  <script>
+    (function () {
+      var el = document.getElementById('hero-rotator');
+      if (!el) return;
+
+      var phrasesByLang = {
+        en: [
+          'Build for <span class="hero-rotator__highlight">Quality</span> &amp; <span class="hero-rotator__highlight">Fun</span>',
+          'Deploy <span class="hero-rotator__highlight">everywhere</span>',
+          'Scale with <span class="hero-rotator__highlight">confidence</span>'
+        ],
+        fr: [
+          'Construit avec <span class="hero-rotator__highlight">qualité</span> &amp; <span class="hero-rotator__highlight">plaisir</span>',
+          'Déployez <span class="hero-rotator__highlight">partout</span> App Store & Google Play',
+          'Évoluez Vite et en toute <span class="hero-rotator__highlight">confiance</span>'
+        ]
+      };
+      var index = 0;
+
+      function currentPhrases() {
+        var lang = window.STUDIO101_LANG || 'en';
+        return phrasesByLang[lang] || phrasesByLang.en;
+      }
+
+      function swapTo(nextIndex) {
+        el.classList.add('is-swapping');
+        setTimeout(function () {
+          index = nextIndex;
+          el.innerHTML = currentPhrases()[index];
+          el.classList.remove('is-swapping');
+        }, 500);
+      }
+
+      // i18n.js (loaded just above) has already applied the stored language
+      // by the time this runs, so sync the initial phrase immediately -
+      // no fade, so there's no English flash before the swap.
+      index = 0;
+      el.innerHTML = currentPhrases()[0];
+
+      setInterval(function () {
+        swapTo((index + 1) % currentPhrases().length);
+      }, 2600);
+
+      document.addEventListener('studio101:langchange', function () {
+        swapTo(0);
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
