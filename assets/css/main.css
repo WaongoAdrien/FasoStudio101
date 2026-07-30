@@ -25,6 +25,28 @@
   color-scheme: dark;
 }
 
+/* Some in-app browsers (e.g. the Google app's auto dark mode) algorithmically
+   re-theme pages that don't look like they've explicitly handled dark mode via
+   a prefers-color-scheme query, even when color-scheme is set. Re-declaring the
+   same values here is a no-op visually, but gives those heuristics a matching
+   dark ruleset to detect so they leave our own colors alone instead of guessing. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #0c1326;
+    --default-color: #F2EAD9;
+    --heading-color: #F2EAD9;
+    --accent-color: #D4A017;
+    --surface-color: #131A2C;
+    --contrast-color: #0A0E1A;
+    --nav-color: #F2EAD9;
+    --nav-hover-color: #D4A017;
+    --nav-mobile-background-color: #0A0E1A;
+    --nav-dropdown-background-color: #131A2C;
+    --nav-dropdown-color: #F2EAD9;
+    --nav-dropdown-hover-color: #D4A017;
+  }
+}
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #0c1326; /* Background color for the entire website, including individual sections */
@@ -806,7 +828,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: var(--nav-mobile-background-color);
     transition: 0.3s;
   }
 
