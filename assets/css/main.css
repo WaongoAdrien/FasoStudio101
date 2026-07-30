@@ -19,6 +19,12 @@
   --nav-font: "Space Grotesk",  sans-serif;
 }
 
+/* Force browser-native UI (form controls, scrollbars) to render dark regardless
+   of OS/browser light-dark preference, since the site's own design is fixed-dark. */
+:root {
+  color-scheme: dark;
+}
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #0c1326; /* Background color for the entire website, including individual sections */
